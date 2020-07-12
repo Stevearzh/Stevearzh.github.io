@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="browsermode" content="application">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="隻言片語">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="msapplication-navbutton-color" content="#666666">
+<meta name= "format-detection" content="telephone=no" />
+
+  <link rel="apple-touch-icon"  sizes="72x72"  href="/favicon.png">
+  <link rel="apple-touch-icon-precomposed"  sizes="72x72"  href="/favicon.png">
+
+
+
+
+
+
+<link rel="apple-touch-startup-image" media="(device-width: 375px)" href="assets/apple-launch-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(orientation: landscape)" href="assets/apple-touch-startup-image-2048x1496.png">
+
+<link rel="stylesheet" href="/style/style.css">
+
+<script>
+  var nlviconfig = {
+    title: "隻言片語",
+    author: "Steve Zhang",
+    baseUrl: "/",
+    theme: {
+      scheme: "banderole",
+      lightbox: true,
+      animate: true,
+      search: false,
+      friends: false,
+      reward: false,
+      pjax: false,
+      lazy: false,
+      toc: false
+    }
+  }
+</script>
+
+
+
+
+    
+<link rel="stylesheet" href="/script/lib/lightbox/css/lightbox.min.css">
+
+
+
+
+
+    
+<link rel="stylesheet" href="/syuanpi/syuanpi.min.css">
+
+
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+@font-face {
+  font-family: "Allura";
+  src: url('/font/allura/allura.ttf');
+}
+</style>
+
+  <title>
+  
+    归档 · 隻言片語
+  
+</title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+  <div class="container">
+    <header class="header" id="header">
+  <div class="header-wrapper">
+    <div class="logo">
+  <div class="logo-inner syuanpi tvIn" style="display:none;">
+    <h1><a href="/">隻言片語</a></h1>
+    
+  </div>
+</div>
+
+    <nav class="main-nav">
+  
+  <ul class="main-nav-list syuanpi tvIn">
+  
+  
+  
+    
+  
+    <li class="menu-item">
+      <a href="/" id="文章">
+        <span class="base-name">
+          
+            文章
+          
+        </span>
+      </a>
+    </li>
+  
+  
+    
+  
+    <li class="menu-item">
+      <a href="/archives" id="归档">
+        <span class="base-name">
+          
+            归档
+          
+        </span>
+      </a>
+    </li>
+  
+  
+    
+  
+    <li class="menu-item">
+      <a href="/tags" id="标签">
+        <span class="base-name">
+          
+            标签
+          
+        </span>
+      </a>
+    </li>
+  
+  
+    
+  
+    <li class="menu-item">
+      <a href="/about" id="关于">
+        <span class="base-name">
+          
+            关于
+          
+        </span>
+      </a>
+    </li>
+  
+  
+  </ul>
+  
+</nav>
+
+  </div>
+</header>
+<div class="mobile-header" id="mobile-header">
+  <div class="mobile-header-nav">
+    <div class="mobile-header-item" id="mobile-left">
+      <div class="header-menu-item">
+        <div class="header-menu-line"></div>
+      </div>
+    </div>
+    <h1 class="mobile-header-title">
+      <a href="/">隻言片語</a>
+    </h1>
+    <div class="mobile-header-item"></div>
+  </div>
+  <div class="mobile-header-body">
+    <ul class="mobile-header-list">
+      
+        <li class="mobile-nav-item syuanpi fadeInRightShort back-0">
+          <a href="/" >
+            
+              文章
+            
+          </a>
+        </li>
+      
+        <li class="mobile-nav-item syuanpi fadeInRightShort back-1">
+          <a href="/archives" >
+            
+              归档
+            
+          </a>
+        </li>
+      
+        <li class="mobile-nav-item syuanpi fadeInRightShort back-2">
+          <a href="/tags" >
+            
+              标签
+            
+          </a>
+        </li>
+      
+        <li class="mobile-nav-item syuanpi fadeInRightShort back-3">
+          <a href="/about" >
+            
+              关于
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+    <div class="container-inner" style="display:none;">
+      <main class="main" id="main">
+        <div class="main-wrapper">
+          
+    
+  <div class="archive syuanpi fadeInRightShort" id="archive">
+    
+      <aside class="archive-title">Total</aside>
+      <span class="archive-num">一共有 1 篇文章</span>
+    
+      
+      
+        
+          
+          
+            
+            
+            <div class="archive-group">
+            <time class="archive-year"> 2020 </time>
+            <div class="archive-list">
+          
+          
+        <div class="archive-post">
+          <div class="archive-post-content">
+            
+              <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>最近业务中遇到了如下需求 —— 有一系列半径不同的圆，需要通过鼠标的框选操作将这些圆以选中状态标示出来：</p>
+<p><img src="/images/geometry-in-front-end/01.png" alt=""></p>
+<p>项目是基于 <a href="https://github.com/d3/d3" target="_blank" rel="noopener">d3</a> 的项目，也就是说所有的圆都在一个 <code>svg</code> 的 <code>g</code> 图层上；框选操作用的是 <a href="https://github.com/d3/d3-brush" target="_blank" rel="noopener">d3-brush</a>，会在 <code>svg</code> 上生成一个新的图层 <code>g</code>，然后在这个新的 <code>g</code> 图层上根据鼠标的拖拽生成一个矩形选框。</p>
+<p>框选图层和圆所在图层是两个独立的图层。本来以为 d3 会把选中与否的状态一并给出，结果发现并没有… 已知的只有这些信息：</p>
+<ol>
+<li>所有圆的圆心坐标和半径；</li>
+<li>矩形选框两个对角线顶点的坐标；</li>
+</ol>
+<p>于是问题就变成了，如何判断矩形与圆是否相交？</p>
+<h3 id="调研"><a href="#调研" class="headerlink" title="调研"></a>调研</h3><p>通过 Google 搜索可以发现 StackOverflow 上有<a href="https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection" target="_blank" rel="noopener">相关问题</a></p>
+<p><img src="/images/geometry-in-front-end/02.png" alt=""></p>
+<p>可以把矩形和圆相交的情况分为两种：</p>
+<ol>
+<li>圆心在矩形内</li>
+<li>矩形任意一条边（线段）和圆相交</li>
+</ol>
+<h3 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h3><h4 id="基础类型"><a href="#基础类型" class="headerlink" title="基础类型"></a>基础类型</h4><p>通过以上调研可知需要以下要素：点、线段、直线、矩形、圆。通过代码（TypeScript）来声明类型。</p>
+<h5 id="点"><a href="#点" class="headerlink" title="点"></a>点</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Point &#123;</span><br><span class="line">    x: <span class="built_in">number</span>;</span><br><span class="line">    y: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="线段"><a href="#线段" class="headerlink" title="线段"></a>线段</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> LineSegment &#123;</span><br><span class="line">    p: Point;</span><br><span class="line">    q: Point;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Line &#123; <span class="comment">// f(x) = kx + b</span></span><br><span class="line">    k: <span class="built_in">number</span>;</span><br><span class="line">    b: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="矩形"><a href="#矩形" class="headerlink" title="矩形"></a>矩形</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * p</span></span><br><span class="line"><span class="comment"> * -----------------</span></span><br><span class="line"><span class="comment"> * |               |</span></span><br><span class="line"><span class="comment"> * |               |</span></span><br><span class="line"><span class="comment"> * |               |</span></span><br><span class="line"><span class="comment"> * -----------------</span></span><br><span class="line"><span class="comment"> *                 q</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Rectangle &#123;</span><br><span class="line">    p: Point;</span><br><span class="line">    q: Point;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="圆"><a href="#圆" class="headerlink" title="圆"></a>圆</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Circle &#123;</span><br><span class="line">    p: Point;</span><br><span class="line">    r: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="基础方法"><a href="#基础方法" class="headerlink" title="基础方法"></a>基础方法</h4><p>有了基础类型，还需要一些基础方法，下面将依次介绍。</p>
+<h5 id="两点是否相同"><a href="#两点是否相同" class="headerlink" title="两点是否相同"></a>两点是否相同</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isTwoPointEqual</span>(<span class="params">a: Point, b: Point</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (a.x === b.x) &amp;&amp; (a.y === b.y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="两点间距离的平方"><a href="#两点间距离的平方" class="headerlink" title="两点间距离的平方"></a>两点间距离的平方</h5><p>没有看错，是平方。这里为了减少后续的计算量就不开根号了…</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">distanceSquare</span>(<span class="params">p: Point, q: Point</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (p.x - q.x) ** <span class="number">2</span> + (p.y - q.y) ** <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="两点确定一条直线"><a href="#两点确定一条直线" class="headerlink" title="两点确定一条直线"></a>两点确定一条直线</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * if there is a line f(x) = k * x + b go through two points p(x0, y0) and q(x1, y1),</span></span><br><span class="line"><span class="comment"> * then there must be:</span></span><br><span class="line"><span class="comment"> * y0 = k * x0 + b,</span></span><br><span class="line"><span class="comment"> * y1 = k * x1 + b</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">getLineByTwoPoints</span>(<span class="params">p: Point, q: Point</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isTwoPointEqual(p, q)) &#123; <span class="comment">// two points must not be the same point</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// this is the line x = b</span></span><br><span class="line">    <span class="keyword">if</span> (p.x === q.x) &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            k: <span class="literal">Infinity</span>,</span><br><span class="line">            b: p.x,</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        k: (q.y - p.y) / (q.x - p.x),</span><br><span class="line">        b: (p.y * q.x - q.y * p.x) / (q.x - p.x)</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>考虑到有三种可能的特殊情况：</p>
+<p>第一种特殊情况，两个点是相同的点，这个时候无法确定唯一的直线，因此返回 <code>undefined</code>；</p>
+<p>第二种情况，通过两点的直线是平行于 y 轴的直线，如果按照常规公式计算是求不出斜率的（无穷大），这里设定<em>平行于 y 轴的直线斜率为无穷大（k=∞）</em>；</p>
+<p>第三种情况，通过两点的直线是平行于 x 轴的直线，这时候按照常规公式计算可以得出斜率为 <code>0</code>，因此这里不做特殊处理。</p>
+<h5 id="通过直线上某点的坐标"><a href="#通过直线上某点的坐标" class="headerlink" title="通过直线上某点的坐标"></a>通过直线上某点的坐标</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">LineFun</span>(<span class="params">x: <span class="built_in">number</span>, line: Line</span>): <span class="title">number</span> | <span class="title">undefined</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">Number</span>.isFinite(line.k)) &#123; <span class="comment">// k is Infinity, means line is x = b</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> line.k * x + line.b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="判断某个点是否在直线上"><a href="#判断某个点是否在直线上" class="headerlink" title="判断某个点是否在直线上"></a>判断某个点是否在直线上</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isPointOnLine</span>(<span class="params">&#123;x, y&#125;: Point, line: Line</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">Number</span>.isFinite(line.k)) &#123; <span class="comment">// x = b</span></span><br><span class="line">        <span class="keyword">return</span> x === line.b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> LineFun(x, line) === y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="判断某个点是否在线段上"><a href="#判断某个点是否在线段上" class="headerlink" title="判断某个点是否在线段上"></a>判断某个点是否在线段上</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isPointOnLineSegment</span>(<span class="params">p: Point, ls: LineSegment</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> line = getLineByTwoPoints(ls.p, ls.q);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> (p.x &gt;= <span class="built_in">Math</span>.min(ls.p.x, ls.q.x)) &amp;&amp; (p.x &lt;= <span class="built_in">Math</span>.max(ls.p.x, ls.q.x)) &amp;&amp;</span><br><span class="line">        (p.y &gt;= <span class="built_in">Math</span>.min(ls.p.y, ls.q.y)) &amp;&amp; (p.y &lt;= <span class="built_in">Math</span>.max(ls.p.y, ls.q.y)) &amp;&amp;</span><br><span class="line">        isPointOnLine(p, line);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="找到直线上距离某点最近的点"><a href="#找到直线上距离某点最近的点" class="headerlink" title="找到直线上距离某点最近的点"></a>找到直线上距离某点最近的点</h5><p><img src="/images/geometry-in-front-end/03.png" alt=""></p>
+<p>不考虑特殊情况（已知点在已知直线上），如果要求已知直线上距离直线外已知点最近的那个点，若垂直于已知直线 <code>l</code> 过已知点 <code>p</code> 做直线 <code>l&#39;</code> 交直线 <code>l</code> 于点 <code>q</code>，则点 <code>q</code> 就是所求的那个点。</p>
+<p>若直线 <code>l</code> 与直线 <code>l&#39;</code> 的斜率分别为 <code>k</code> 与 <code>k2</code>，则 <code>k</code>、<code>k2</code> 相乘结果为 <code>-1</code>；再分别根据通过点 <code>p</code> 的直线 <code>l</code> 的方程 <code>y = k * x + b</code>，通过点 <code>p</code> 与点 <code>q</code> 的直线 <code>l&#39;</code> 的方程 <code>y = k2 * x + b</code> 列出方程组求解即可。</p>
+<p>（<del>解决这个方程组倒是挺累的… 高考之后就没碰过这些了</del>）</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">findTheNearestPointOnLineToPoint</span>(<span class="params">p: Point, l: Line</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isPointOnLine(p, l)) &#123;</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">Number</span>.isFinite(l.k)) &#123; <span class="comment">// x = b</span></span><br><span class="line">        <span class="keyword">return</span> &#123; x: l.b, y: p.y &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (l.k === <span class="number">0</span>) &#123; <span class="comment">// y = b</span></span><br><span class="line">        <span class="keyword">return</span> &#123; x: p.x, y: l.b &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * imagine the nearest point q on the line is (x1, y1), it satisfy y1 = k * x1 + b,</span></span><br><span class="line"><span class="comment">     * and the line2 go through both p(x0, y0) and q, and line2 has k2 and b2, it must satisfy k * k2 = -1</span></span><br><span class="line"><span class="comment">     * because line and line2 are vertical, so:</span></span><br><span class="line"><span class="comment">     * y1 = k * x1 + b,</span></span><br><span class="line"><span class="comment">     * y1 = k2 * x1 + b2,</span></span><br><span class="line"><span class="comment">     * y0 = k2 * x0 + b2,</span></span><br><span class="line"><span class="comment">     * k * k2 = -1</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * and at least we can get that:</span></span><br><span class="line"><span class="comment">     * x1 = (x0 - k * b) / (k ** 2 + 1)</span></span><br><span class="line"><span class="comment">     * y1 = k * x1 + b</span></span><br><span class="line"><span class="comment">     **/</span></span><br><span class="line">    <span class="keyword">const</span> x = (p.x - l.k * l.b) / (l.k ** <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        x,</span><br><span class="line">        y: l.k * x + l.b,</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="进阶方法"><a href="#进阶方法" class="headerlink" title="进阶方法"></a>进阶方法</h4><p>根据基础方法可以组合出进阶方法。</p>
+<h5 id="判断某个点是否在圆内"><a href="#判断某个点是否在圆内" class="headerlink" title="判断某个点是否在圆内"></a>判断某个点是否在圆内</h5><p>实际上是判断这个点和圆心的距离（的平方）是否小于等于圆的半径（的平方）。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isPointInCircle</span>(<span class="params">point: Point, circle: Circle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> distanceSquare(point, circle.p) &lt;= (circle.r ** <span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="判断某个点是否在矩形内"><a href="#判断某个点是否在矩形内" class="headerlink" title="判断某个点是否在矩形内"></a>判断某个点是否在矩形内</h5><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isPointInRectangle</span>(<span class="params">p0: Point, &#123; p, q &#125;: Rectangle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (p0.x &gt; p.x) &amp;&amp; (p0.y &gt; p.y) &amp;&amp; (p0.x &lt; q.x) &amp;&amp; (p0.y &lt; q.y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="判断线段是否和圆相交"><a href="#判断线段是否和圆相交" class="headerlink" title="判断线段是否和圆相交"></a>判断线段是否和圆相交</h5><p>线段和圆相交时也可以分为两种情况：</p>
+<ol>
+<li>线段的某个端点（<code>p</code> 或者 <code>q</code>）在圆内</li>
+<li>线段的两个端点都不在圆内，但是通过线段的两个端点（<code>p</code> 和 <code>q</code>）的直线上，距离圆心距离最近的那个点，在圆内</li>
+</ol>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * if a line segment which has two points ls.p and ls.q on it's end</span></span><br><span class="line"><span class="comment"> * is intersect with a circle which have point c.p on it's center and have c.r radius, it must</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * ls.p or ls.q is in circle OR the nearest point q on line segment to circle center point, is in circle</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isLineSegmentIntersectCircle</span>(<span class="params">ls: LineSegment, c: Circle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isTwoPointEqual(ls.p, ls.q)) &#123;</span><br><span class="line">        <span class="keyword">return</span> isPointInCircle(ls.p, c);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> np = findTheNearestPointOnLineToPoint(c.p, getLineByTwoPoints(ls.p, ls.q));</span><br><span class="line">    <span class="keyword">return</span> isPointInCircle(ls.p, c) ||</span><br><span class="line">        isPointInCircle(ls.q, c) ||</span><br><span class="line">        (isPointInCircle(np, c) &amp;&amp; isPointOnLineSegment(np, ls));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="求解"><a href="#求解" class="headerlink" title="求解"></a>求解</h4><p>根据这些类型和方法，可以最终求解：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">isRectangleOverlapCircle</span>(<span class="params">rectangle: Rectangle, circle: Circle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; p, q &#125; = rectangle;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// single node</span></span><br><span class="line">    <span class="keyword">if</span> (isTwoPointEqual(p, q)) &#123;</span><br><span class="line">        <span class="keyword">return</span> isPointInCircle(p, circle);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * There are only two cases when the circle intersects with the rectangle:</span></span><br><span class="line"><span class="comment">     *     - Either the circle's centre lies inside the rectangle, or</span></span><br><span class="line"><span class="comment">     *     - One of the edges of the rectangle has a point in the circle.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection</span></span><br><span class="line"><span class="comment">     **/</span></span><br><span class="line">    <span class="keyword">const</span> a = p;</span><br><span class="line">    <span class="keyword">const</span> b = &#123; x: p.x, y: q.y &#125;;</span><br><span class="line">    <span class="keyword">const</span> c = q;</span><br><span class="line">    <span class="keyword">const</span> d = &#123; x: q.x, y: p.y &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> isPointInRectangle(circle.p, rectangle) ||</span><br><span class="line">        isLineSegmentIntersectCircle(&#123; p: a, q: b&#125;, circle) ||</span><br><span class="line">        isLineSegmentIntersectCircle(&#123; p: b, q: c&#125;, circle) ||</span><br><span class="line">        isLineSegmentIntersectCircle(&#123; p: c, q: d&#125;, circle) ||</span><br><span class="line">        isLineSegmentIntersectCircle(&#123; p: d, q: a&#125;, circle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>这个问题感觉还挺有意思的，有点像是 rts 游戏里选中单位的操作。根据这些建模还可以拓展出很多东西来。</p>
+<p>某些地方其实还考虑复杂了，比如拖选操作拖出来的矩形选框的四条边实际上就是平行于 x 轴和 y 轴的…</p>
+
+            
+          </div>
+          <div class="archive-post-info">
+            <time class="archive-post-time">
+              2020-07-11
+            </time>
+            <a  class="archive-post-link" href="/2020/07/11/geometry-in-front-end/">
+              浅谈前端中的几何学
+            </a>
+          </div>
+        </div>
+      
+      
+        </section></section>
+      
+  </div>
+  
+  <nav class="pagination">
+      <span class="page-number current">1</span>
+  </nav>
+
+
+
+
+        </div>
+      </main>
+      <footer class="footer syuanpi fadeIn" id="footer">
+  <hr>
+  <div class="footer-wrapper">
+    <div class="left">
+      <div class="contact-icon">
+  
+  
+    <a href="https://twitter.com/stevearzh" target="_blank" rel="noopener" class="iconfont icon-twitter" title="twitter"></a>
+  
+    <a href="https://github.com/stevearzh" target="_blank" rel="noopener" class="iconfont icon-github" title="github"></a>
+  
+    <a href="https://www.linkedin.com/in/stevearzh" target="_blank" rel="noopener" class="iconfont icon-linkedin" title="linkedin"></a>
+  
+    <a href="mailto:stevearzh@outlook.com" class="iconfont icon-mail" title="mail"></a>
+  
+</div>
+
+    </div>
+    <div class="right">
+      <div class="copyright">
+    <div class="info">
+        <span>&copy;</span>
+        <span>2014 ~ 2020</span>
+        <span>❤</span>
+        <span>Steve Zhang</span>
+    </div>
+    <div class="theme">
+        <span>
+            动力来源于
+            <a href="http://hexo.io/" target="_blank" rel="noopener">Hexo </a>
+        </span>
+        <span>
+            主题
+            <a href="https://github.com/ColMugX/hexo-theme-Nlvi" target="_blank" rel="noopener"> Nlvi </a>
+        </span>
+    </div>
+    
+</div>
+
+    </div>
+  </div>
+</footer>
+    </div>
+    <div class="tagcloud" id="tagcloud">
+  <div class="tagcloud-taglist">
+  
+    <div class="tagcloud-tag">
+      <button>front-end</button>
+    </div>
+  
+    <div class="tagcloud-tag">
+      <button>geometry</button>
+    </div>
+  
+  </div>
+  
+    <div class="tagcloud-postlist active">
+      <h2>front-end</h2>
+      
+        <div class="tagcloud-post">
+          <a href="/2020/07/11/geometry-in-front-end/">
+            <time class="tagcloud-posttime">2020 / 07 / 11</time>
+            <span>浅谈前端中的几何学</span>
+          </a>
+        </div>
+      
+    </div>
+  
+    <div class="tagcloud-postlist ">
+      <h2>geometry</h2>
+      
+        <div class="tagcloud-post">
+          <a href="/2020/07/11/geometry-in-front-end/">
+            <time class="tagcloud-posttime">2020 / 07 / 11</time>
+            <span>浅谈前端中的几何学</span>
+          </a>
+        </div>
+      
+    </div>
+  
+</div>
+
+  </div>
+  <div class="backtop syuanpi melt toTop" id="backtop">
+    <i class="iconfont icon-up"></i>
+    <span style="text-align:center;font-family:Georgia;"><span style="font-family:Georgia;" id="scrollpercent">1</span>%</span>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+
+
+  <script></script>
+  <script src="/script/lib/lightbox/js/lightbox.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/script/scheme/banderole.js"></script>
+
+
+
+
+<script src="/script/bootstarp.js"></script>
+
+
+
+
+
+</body>
+</html>
